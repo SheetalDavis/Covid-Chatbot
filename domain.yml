@@ -1,0 +1,95 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- covid_symptoms
+- covid_info
+- covid_symptoms_info
+- covid_spread_info
+- covid_prevention_info
+- covid_antibiotics_info
+- covid_vaccine
+- corona_state
+- corona_map
+entities:
+- state
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_covid_map:
+  - text: Please click the link to see covid cases on map https://www.bing.com/covid/local/india
+  utter_about_covid:
+  - text: Coronaviruses are a large family of viruses which may cause illness in animals
+      or humans.  In humans, several coronaviruses are     known to cause respiratory
+      infections ranging from the common cold to more severe diseases such as Middle
+      East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS).
+      The most recently discovered coronavirus causes coronavirus disease COVID-19.
+  utter_general_tips:
+  - text: Contact nearest healthcare facility for a covid test. Take care
+  utter_types_symptoms:
+  - text: The most common symptoms of COVID-19 are fever, tiredness, and dry cough.
+      Some patients may have aches and pains, nasal congestion, runny nose, sore throat
+      or diarrhea. These symptoms are usually mild and begin gradually. Some people
+      become infected but donâ€™t develop any symptoms and don't feel unwell. Most
+      people (about 80%) recover from the disease without needing special treatment.
+      Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops
+      difficulty breathing. Older people, and those with underlying medical problems
+      like high blood pressure, heart problems or diabetes, are more likely to develop
+      serious illness. People with fever, cough and difficulty breathing should seek
+      medical attention.
+  utter_spread_details:
+  - text: People can catch COVID-19 from others who have the virus. The disease can
+      spread from person to person through small droplets from the nose or mouth which
+      are spread when a person with COVID-19 coughs or exhales. These droplets land
+      on objects and surfaces around the person. Other people then catch COVID-19
+      by touching these objects or surfaces, then touching their eyes, nose or mouth.
+      People can also catch COVID-19 if they breathe in droplets from a person with
+      COVID-19 who coughs out or exhales droplets. This is why it is important to
+      stay more than 1 meter (3 feet) away from a person who is sick.WHO is assessing
+      ongoing research on the ways COVID-19 is spread and will continue to share updated
+      findings.
+  utter_prevent_covid:
+  - text: Stay aware of the latest information on the COVID-19 outbreak, available
+      on the WHO website and through your national and local public health authority.
+      Many countries around the world have seen cases of COVID-19 and several have
+      seen outbreaks. Authorities in China and some other countries have succeeded
+      in slowing or stopping their outbreaks. However, the situation is unpredictable
+      so check regularly for the latest news.
+  utter_about_antibiotics:
+  - text: No. Antibiotics do not work against viruses, they only work on bacterial
+      infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics
+      should not be used as a means of prevention or treatment of COVID-19. They should
+      only be used as directed by a physician to treat a bacterial infection.
+  utter_about_vaccine:
+  - text: Not yet. To date, there is no vaccine and no specific antiviral medicine
+      to prevent or treat COVID-2019. However, those affected should receive care
+      to relieve symptoms. People with serious illness should be hospitalized. Most
+      patients recover thanks to supportive care.Possible vaccines and some specific
+      drug treatments are under investigation. They are being tested through clinical
+      trials. WHO is coordinating efforts to develop vaccines and medicines to prevent
+      and treat COVID-19.The most effective ways to protect yourself and others against
+      COVID-19 are to frequently clean your hands, cover your cough with the bend
+      of elbow or tissue, and maintain a distance of at least 1 meter (3 feet) from
+      people who are coughing or sneezing
+  utter_handle_denial:
+  - text: hmm
+actions:
+- action_corona_tracker
