@@ -1,0 +1,67 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say be happy when  mood is unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say 'general tips' anytime the user says covid
+  steps:
+  - intent: covid_info
+  - action: utter_about_covid
+
+- rule: ask any 'symptoms' to user
+  steps:
+  - intent: covid_symptoms
+  - action: utter_general_tips
+
+- rule: say 'what are covid symptoms' to user
+  steps:
+  - intent: covid_symptoms_info
+  - action: utter_types_symptoms
+
+- rule: say 'about covid spead' to user
+  steps:
+  - intent: covid_spread_info
+  - action: utter_spread_details
+
+- rule: say 'covid prevention' to user
+  steps:
+  - intent: covid_prevention_info
+  - action: utter_prevent_covid
+
+- rule: say 'antibiotics' to user
+  steps:
+  - intent: covid_antibiotics_info
+  - action: utter_about_antibiotics
+
+
+- rule: say 'vaccine' to user
+  steps:
+  - intent: covid_vaccine
+  - action: utter_about_vaccine
+
+- rule: say 'corona update' to user
+  steps:
+  - intent: corona_state
+  - action: action_corona_tracker
+
+- rule: show 'covid distribution' on map
+  steps:
+  - intent: corona_map
+  - action: utter_covid_map
+
+
+

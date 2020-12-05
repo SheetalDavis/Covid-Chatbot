@@ -1,0 +1,205 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fine
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+#- intent: covid_number examples
+ #   - I want to know the number of covid cases in [Kerala]("location")
+  #  - what is the  number of covid cases in [Goa]("location")
+   # - which state in [India]("location") have the highest number of covid cases
+#    - which state in [India]("location") have the lowest number of covid cases
+ #   - covid cases in [Tamil Nadu]("location")
+  #  - Is the covid cases in [Punjab]("location") decreasing
+   # - Is [Maharashtra]("location") having highest covid cases today
+
+- intent: corona_state
+  examples: |
+    - [india](state)
+    - I want to know the number of covid cases in [Kerala](state)
+    - what is the  number of covid cases in [Goa](state)
+    - which state in [India](state) have the highest number of covid cases
+    - which state in [India](state) have the lowest number of covid cases
+    - covid cases in [Tamil Nadu](state)
+    - Is the covid cases in [Punjab](state) decreasing
+    - Is [Maharashtra](state) having highest covid cases today
+    - [Bihar](state)
+    - [Andhra Pradesh](state)
+    - [Arunachal Pradesh](state)
+    - [Assam](state)
+    - [Karnataka](state)
+    - [Chhattisgarh](state)
+    - [Uttar Pradesh](state)
+    - [Andhra Pradesh](state)
+    - [Gujarat](state)
+    - [Haryana](state)
+    - [Himachal Pradesh](state)
+    - [Jammu and Kashmir](state)
+    - [Jharkhand](state)
+    - [Bengal](state)
+    - [Telangana]
+    - [Tripura](state)
+    - [Uttarakhand](state)
+    - [Manipur](state)
+    - [Meghalaya](state)
+    - [Mizoram](state)
+    - [Nagaland](state)
+    - [Orissa](state)
+
+
+- intent: covid_symptoms
+  examples: |
+    - i have fever
+    - i am feeling well
+    - severe cold
+    - throat pain
+    - headache
+    - cough
+    - breathing problem
+    - asthma
+    - chill
+    - vomit
+    - body pain
+    - temperature
+
+- intent: corona_map
+  examples: | 
+    - Covid cases on map?
+    - map covid distribution
+    - covid map
+    - map
+
+- intent: covid_info
+  examples: |
+    - What is a coronavirus?
+    - What is COVID-19?
+
+- intent: covid_symptoms_info
+  examples: |
+    - What are the symptoms of COVID 19?
+    - symptoms of covid 19
+    - symptoms of coronavirus
+    - covid 19 symptoms
+    - coronavirus symptoms
+
+- intent: covid_spread_info
+  examples: |
+    - How does COVID 19 spread?
+    - Does sneezing spread covid?
+    - without mask will covid speard?
+    - How does coronavirus spread?
+
+- intent: covid_prevention_info
+  examples: |
+    - What can I do to protect myself and prevent the spread of disease?
+    - how to prevent the spread of disease?
+    - Protection measures for everyone
+    - prevent the spread of disease"
+
+- intent: covid_antibiotics_info
+  examples: |
+    - Are antibiotics effective in preventing or treating the COVID-19?
+    - antibiotics effective in preventing treating the coronavirus
+    - antibiotic effective in coronavirus
+
+- intent: covid_vaccine
+  examples: |
+    - Is there a vaccine, drug or treatment for COVID-19?
+    - Is there a drug or treatment for COVID 19?
+    - Is there a vaccine?
+    - drug or treatment for coronavirus?
+         
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+
+
+
+

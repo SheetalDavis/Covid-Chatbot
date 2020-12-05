@@ -1,0 +1,43 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: covid_symptoms
+  - action: utter_general_tips
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: covid_vaccine
+  - action: utter_about_vaccine
+  - intent: covid_info
+  - action: utter_about_covid
+
+- story: sad path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: covid_prevention_info
+  - action: utter_prevent_covid
+- story: corona tracker path
+  steps:
+  - intent: corona_state
+  - action: action_corona_tracker
+ 
+
+
+
